@@ -1,4 +1,4 @@
-package profils;
+package com.company.profils;
 
 public class Rodeur implements IProfil {
 

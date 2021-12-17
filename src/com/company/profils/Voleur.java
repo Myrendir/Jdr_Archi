@@ -1,8 +1,10 @@
-package profils;
+package com.company.profils;
 
-public class Magicien implements IProfil {
-    int pv = 4;
+public class Voleur implements IProfil {
+
+    int pv = 6;
     int niveau = 1;
+
     @Override
     public int getPv() {
         return this.pv;

@@ -1,4 +1,4 @@
-package races;
+package com.company.races;
 
 import java.util.ArrayList;
 import java.util.List;

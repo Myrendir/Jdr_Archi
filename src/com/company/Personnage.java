@@ -1,7 +1,9 @@
-import profils.IProfil;
-import races.IRace;
-import races.ModRaces;
-import races.TypeCarac;
+package com.company;
+
+import com.company.profils.IProfil;
+import com.company.races.IRace;
+import com.company.races.ModRaces;
+import com.company.races.TypeCarac;
 
 
 import java.util.ArrayList;
@@ -19,9 +21,9 @@ public class Personnage {
         this.race = race;
         this.nom = nom;
         for (TypeCarac carac : TypeCarac.values()) {
-            ModRaces modRaces = race.getModRaceList().stream().findAny(item -> item.nom == carac);
-            int baseValue = modRaces ? modRaces.getValue() : 0;
-            Caracteristique caracteristique = new Caracteristique(carac, );
+            ModRaces modRaces = race.getModRaceList().stream().filter(item -> item.nom == carac).findAny().orElse(null);
+            int baseValue = modRaces != null ? modRaces.getValue() : 0;
+            Caracteristique caracteristique = new Caracteristique(carac, baseValue);
         }
     }
 }

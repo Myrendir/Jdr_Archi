@@ -1,4 +1,6 @@
-import races.TypeCarac;
+package com.company;
+
+import com.company.races.TypeCarac;
 
 public class Caracteristique {
     public TypeCarac nom;

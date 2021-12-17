@@ -1,9 +1,9 @@
-package profils;
+package com.company.profils;
 
-public class Pretre implements IProfil {
-
-    int pv = 8;
+public class Guerrier implements IProfil {
+    int pv = 10;
     int niveau = 1;
+
 
     @Override
     public int getPv() {

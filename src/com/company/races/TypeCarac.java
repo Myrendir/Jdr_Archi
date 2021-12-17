@@ -1,4 +1,4 @@
-package races;
+package com.company.races;
 
 public enum TypeCarac {
     FORCE,
